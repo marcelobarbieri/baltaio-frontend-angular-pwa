@@ -128,6 +128,12 @@ ionic serve --lab
 
 </details>
 
+<details><summary>Tirando Foto: Parte 3</summary>
+
+<br>
+
+</details>
+
 <br>
 
 # Links
