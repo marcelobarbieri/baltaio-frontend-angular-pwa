@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { TakePhotoPage } from './pages/take-photo/take-photo.page';
 
 @NgModule({
   declarations: [AppComponent],

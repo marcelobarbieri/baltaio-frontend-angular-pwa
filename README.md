@@ -110,6 +110,18 @@ npm install firebase @angular/fire --save
 
 </details>
 
+<details><summary>Tirando Foto: Parte 1</summary>
+
+<br>
+
+```ps
+ionic generate page pages/take-photo
+
+ionic serve --lab
+```
+
+</details>
+
 <br>
 
 # Links
