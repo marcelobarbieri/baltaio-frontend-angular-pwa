@@ -5,9 +5,14 @@
 > As aulas foram organizadas dentro dos _commits_
 
 <details><summary>Apresentação</summary>
+
+<br>
+
 </details>
 
 <details><summary>Setup Firebase</summary>
+
+<br>
 
 https://console.firebase.google.com/
 
@@ -86,6 +91,20 @@ service firebase.storage {
 - Publicar
 
 </details>
+
+<details><summary>Setup AngularFire</summary>
+
+<br>
+
+```ps
+ionic start baltagram blank
+
+npm install firebase @angular/fire --save
+```
+
+</details>
+
+<br>
 
 # Links
 
