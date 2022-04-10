@@ -134,6 +134,16 @@ ionic serve --lab
 
 </details>
 
+<details><summary>Iniciando a Página de Post</summary>
+
+<br>
+
+```ps
+ionic generate page pages/post
+```
+
+</details>
+
 <br>
 
 # Links

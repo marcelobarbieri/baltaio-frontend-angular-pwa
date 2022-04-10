@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nova Atividade</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="showCloseOptions()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let filter of filters">
+        <img src="{{ post.image }}" class="{{ filter }}" alt="">
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+</ion-content>

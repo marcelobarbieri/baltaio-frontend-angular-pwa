@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/take-photo/take-photo.module').then(m => m.TakePhotoPageModule)
   },
+  { 
+    path: 'post', 
+    loadChildren: () => import('./pages/post/post.module').then(m => m.PostPageModule) 
+  }
 ];
 
 @NgModule({
