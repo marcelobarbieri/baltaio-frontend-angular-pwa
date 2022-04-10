@@ -9,9 +9,9 @@ import { AngularFireStorage, AngularFireUploadTask } from '@angular/fire/storage
   templateUrl: './post.page.html',
   styleUrls: ['./post.page.scss'],
 })
-export class PostPage implements OnInit {
-  
-  public post: Post = new Post('','',null);
+export class PostPage {
+
+  public post: Post = new Post('', '', null);
   public filters: string[] = [];
 
   constructor(
@@ -20,7 +20,7 @@ export class PostPage implements OnInit {
     private toastCtrl: ToastController,
     private navCtrl: NavController,
     private alertCtrl: AlertController
-  ) { 
+  ) {
     const data = localStorage.getItem('baltagram.post');
     if (data) this.post = JSON.parse(data);
 
@@ -34,6 +34,25 @@ export class PostPage implements OnInit {
     this.filters.push('filter-willow');
   }
 
-  ngOnInit() {   }
+  getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        this.post.location = `${position.coords.latitude},${position.coords.longitude}`;
+        localStorage.setItem('baltagram.post', JSON.stringify(this.post));
+      });
+    } else {
+      this.showMessage('Não foi possível obter sua localização.');
+    }
+  }
+
+  async showMessage(message: string) {
+    const toast = await this.toastCtrl.create({
+      message: message,
+      duration: 3000,
+      showCloseButton: true,
+      closeButtonText: "OK"
+    });
+    toast.present();
+  }
 
 }

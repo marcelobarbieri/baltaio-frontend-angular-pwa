@@ -144,6 +144,12 @@ ionic generate page pages/post
 
 </details>
 
+<details><summary>Utilizando a Geolocalização</summary>
+
+<br>
+
+</details>
+
 <br>
 
 # Links
