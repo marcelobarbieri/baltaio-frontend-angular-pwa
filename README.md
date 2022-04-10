@@ -104,6 +104,12 @@ npm install firebase @angular/fire --save
 
 </details>
 
+<details><summary>Models</summary>
+
+<br>
+
+</details>
+
 <br>
 
 # Links
