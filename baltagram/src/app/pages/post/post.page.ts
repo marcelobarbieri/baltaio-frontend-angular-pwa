@@ -55,4 +55,34 @@ export class PostPage {
     toast.present();
   }
 
+  async showCloseOptions() {
+    const alert = await this.alertCtrl.create({
+      header: 'Descartar postagem?',
+      message: 'Deseja descartar esta <strong>postagem</strong>?',
+      buttons: [
+        {
+          text: 'Descartar',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: () => {
+            localStorage.removeItem('baltagram.post');
+            this.close();
+          }
+        },
+        {
+          text: 'Manter',
+          handler: () => {
+            this.close();
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
+  close() {
+    this.navCtrl.navigateBack('/home');
+  }
+
 }

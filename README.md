@@ -150,6 +150,12 @@ ionic generate page pages/post
 
 </details>
 
+<details><summary>Descartando a Publicação</summary>
+
+<br>
+
+</details>
+
 <br>
 
 # Links
