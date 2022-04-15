@@ -187,6 +187,21 @@ Habilitar **Maps Embed API**
 
 </details>
 
+<details><summary>Exibindo os Posts</summary>
+
+<br>
+
+- Incluir um post
+- Adicionar um documento a partir do Firebase
+
+```
+description: "Teste"
+image: https://via.placeholder.com/500
+location: <vazio>
+```
+
+</details>
+
 <br>
 
 # Links
