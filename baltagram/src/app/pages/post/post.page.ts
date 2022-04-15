@@ -107,4 +107,8 @@ export class PostPage {
       });
     });
   }
+
+  showMap() {
+    this.navCtrl.navigateForward('/map');
+  }
 }

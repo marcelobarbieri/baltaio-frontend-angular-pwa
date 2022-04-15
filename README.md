@@ -172,6 +172,21 @@ Após publicar verificar a coleção e o documento persistidos no banco de dados
 
 </details>
 
+<details><summary>Exibindo a Localização no Mapa</summary>
+
+<br>
+
+```ps
+ionic generate page pages/map
+```
+
+https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
+
+Criar uma credencial
+Habilitar **Maps Embed API**
+
+</details>
+
 <br>
 
 # Links
