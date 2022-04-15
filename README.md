@@ -164,6 +164,14 @@ Após publicar verificar a coleção e o documento criado no console do Firebase
 
 </details>
 
+<details><summary>Upload de Imagem</summary>
+
+<br>
+
+Após publicar verificar a coleção e o documento persistidos no banco de dados, e a imagem carregada no Storage, a partir do console do Firebase
+
+</details>
+
 <br>
 
 # Links

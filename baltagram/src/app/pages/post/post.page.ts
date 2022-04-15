@@ -14,6 +14,9 @@ export class PostPage {
   public post: Post = new Post('', '', null);
   public filters: string[] = [];
 
+  public task: AngularFireUploadTask;
+  public progress: any;
+
   constructor(
     private db: AngularFirestore,
     private storage: AngularFireStorage,
@@ -90,9 +93,18 @@ export class PostPage {
   }
 
   submit() {
-    this.post.image = '';
-    this.db.collection('posts').add(this.post);
-    localStorage.removeItem('baltagram.post');
-    this.navCtrl.navigateBack('/home');
+    const filePath = `post_${new Date().getTime()}.jpg`;
+    this.task = this.storage.ref(filePath).putString(this.post.image, 'data_url');
+    this.progress = this.task.percentageChanges();
+
+    this.task.then((data) => {
+      const ref = this.storage.ref(data.metadata.fullPath);
+      ref.getDownloadURL().subscribe((imgUrl) => {
+        this.post.image = imgUrl;
+        this.db.collection('posts').add(this.post);
+        localStorage.removeItem('baltagram.post');
+        this.navCtrl.navigateBack('/home');
+      });
+    });
   }
 }
