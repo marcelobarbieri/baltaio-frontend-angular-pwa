@@ -85,4 +85,14 @@ export class PostPage {
     this.navCtrl.navigateBack('/home');
   }
 
+  saveLocal() {
+    localStorage.setItem('baltagram.post', JSON.stringify(this.post));
+  }
+
+  submit() {
+    this.post.image = '';
+    this.db.collection('posts').add(this.post);
+    localStorage.removeItem('baltagram.post');
+    this.navCtrl.navigateBack('/home');
+  }
 }

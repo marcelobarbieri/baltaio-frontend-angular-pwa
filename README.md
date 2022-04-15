@@ -156,6 +156,14 @@ ionic generate page pages/post
 
 </details>
 
+<details><summary>Persistindo Dados no Firebase</summary>
+
+<br>
+
+Após publicar verificar a coleção e o documento criado no console do Firebase
+
+</details>
+
 <br>
 
 # Links
