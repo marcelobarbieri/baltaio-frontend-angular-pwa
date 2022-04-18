@@ -215,6 +215,12 @@ Verificar o usuário criado na autenticação do Firebase após o cadastro com o
 
 </details>
 
+<details><summary>Autenticando via E-mail e Senha</summary>
+
+<br>
+
+</details>
+
 <br>
 
 # Links
