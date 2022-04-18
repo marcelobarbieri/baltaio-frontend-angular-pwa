@@ -227,6 +227,12 @@ Verificar o usuário criado na autenticação do Firebase após o cadastro com o
 
 </details>
 
+<details><summary>Logout</summary>
+
+<br>
+
+</details>
+
 <br>
 
 # Links
