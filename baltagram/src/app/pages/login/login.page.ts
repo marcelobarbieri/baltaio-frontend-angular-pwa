@@ -60,4 +60,17 @@ export class LoginPage implements OnInit {
   async goToSignup() {
     this.navCtrl.navigateForward('signup');
   }
+
+  async signInWithGoogle() {
+    this.fbAuth.auth.signInWithPopup(new auth.GoogleAuthProvider())
+      .then((data) => {
+        console.log(data);
+        localStorage.setItem('baltagram.user', JSON.stringify(new User(data.user.displayName, data.user.email, data.user.photoURL)));
+        this.navCtrl.navigateRoot('home');
+      })
+      .catch((err) => {
+        console.log(err);
+        this.showMessage("Usuário ou senha inválidos");
+      });
+  }
 }

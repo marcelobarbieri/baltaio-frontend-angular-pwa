@@ -221,6 +221,12 @@ Verificar o usuário criado na autenticação do Firebase após o cadastro com o
 
 </details>
 
+<details><summary>Login com Google</summary>
+
+<br>
+
+</details>
+
 <br>
 
 # Links

@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { TakePhotoPage } from './pages/take-photo/take-photo.page';
+import { AuthGuard } from './guard/auth.guard';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { TakePhotoPage } from './pages/take-photo/take-photo.page';
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [
+    AuthGuard,
     {
       provide: RouteReuseStrategy,
       useClass: IonicRouteStrategy
