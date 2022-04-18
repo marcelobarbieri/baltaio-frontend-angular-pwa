@@ -202,6 +202,19 @@ location: <vazio>
 
 </details>
 
+<details><summary>Criando um usuário</summary>
+
+<br>
+
+```ps
+ionic generate page pages/login
+ionic generate page pages/signup
+```
+
+Verificar o usuário criado na autenticação do Firebase após o cadastro com o provedor e-mail.
+
+</details>
+
 <br>
 
 # Links
