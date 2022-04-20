@@ -245,6 +245,23 @@ ionic serve --lab --prod
 
 </details>
 
+<details><summary>Firebase Deploy</summary>
+
+<br>
+
+```ps
+npm install -g firebase-tools
+firebase init
+ionic build --prod
+firebase deploy
+```
+
+Project Console: https://console.firebase.google.com/project/baltagram-8998a/overview
+
+Hosting URL: https://baltagram-8998a.web.app
+
+</details>
+
 <br>
 
 # Links
