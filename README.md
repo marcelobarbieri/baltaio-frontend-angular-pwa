@@ -233,6 +233,18 @@ Verificar o usuário criado na autenticação do Firebase após o cadastro com o
 
 </details>
 
+<details><summary>Adicionando PWA</summary>
+
+<br>
+
+```ps
+ng add @angular/pwa
+
+ionic serve --lab --prod
+```
+
+</details>
+
 <br>
 
 # Links
